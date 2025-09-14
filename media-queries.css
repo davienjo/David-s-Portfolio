@@ -1,0 +1,110 @@
+/* ======================
+   TABLETS (max-width: 768px)
+   ====================== */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none; /* hidden until hamburger toggle */
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background: var(--primary-color-dark);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+}
+
+
+/* ======================
+   MOBILE (max-width: 576px)
+   ====================== */
+@media (max-width: 576px) {
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .hero-h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .services h2,
+  .projects h2,
+  .about h2,
+  .education h2,
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-card h3,
+  .project-card h3,
+  .education-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .project-container,
+  .services-container,
+  .education-container {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
+
+  .hero-btn {
+    gap: 0.5rem;
+  }
+
+  .contact form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
